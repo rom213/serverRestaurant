@@ -46,7 +46,7 @@ exports.ordersUser=catchAsync(async(req,res,next)=>{
                 ]
             }
         ],
-        attributes:{exclude:['updatedAt','createdAt','status','id','mealId']}
+        attributes:{exclude:['updatedAt','createdAt','status','mealId']}
     })
     
     const resolveImg=orders.map(async(order)=>{
