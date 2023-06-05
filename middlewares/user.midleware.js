@@ -13,11 +13,9 @@ exports.validIfExistUser=catchAsync(async(req,res,next)=>{
           id,
         }
     })
-    console.log('roma')
     if (!user) {
         return next(new AppError('user not found',404))
     }
-    console.log('roma',id)
     
     req.user=user;
     next()

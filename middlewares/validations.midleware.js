@@ -46,7 +46,7 @@ exports.updateUserValidation=[
     body("name")
         .notEmpty()
         .withMessage('name cannot be empty'),
-    body("Email")
+    body("email")
         .notEmpty()
         .withMessage('Email cannot be empty')
         .isEmail()

@@ -26,6 +26,7 @@ exports.createOrder=catchAsync(async(req,res,next)=>{
 
     
 })
+
 exports.ordersUser=catchAsync(async(req,res,next)=>{
     const { sessionUser }=req
     
@@ -78,6 +79,7 @@ exports.updateOrderCompleted=catchAsync(async(req,res,next)=>{
     })
 
 })
+
 exports.deleteOrder=catchAsync(async(req,res,next)=>{
     const { order }= req
 

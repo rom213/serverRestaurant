@@ -4,8 +4,9 @@ const morgan=require('morgan');
 
 const restaurantRouter=require('./routes/restaurants.routes');
 const userRouter=require('./routes/users.routes');
-const mealsRouter=require('./routes/meals.router')
-const ordersRouter=require('./routes/orders.router')
+const mealsRouter=require('./routes/meals.routes');
+const ordersRouter=require('./routes/orders.routes');
+const v1SwagerDocs=require('./swagger')
 
 
 const AppError = require('./utils/appError');
@@ -26,6 +27,7 @@ app.use('/api/v1/restaurants',restaurantRouter)
 app.use('/api/v1/users',userRouter)
 app.use('/api/v1/meals',mealsRouter)
 app.use('/api/v1/orders',ordersRouter)
+v1SwagerDocs(app,process.env.PORT)
 
 
 
