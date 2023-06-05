@@ -7,11 +7,16 @@ const options = {
         info: {
             title: 'api-restaurant',
             version: '1.0.0',
-
+            description: 'Esta es la documentación de la API de Mi Aplicación. Aquí encontrarás información detallada sobre los endpoints y cómo interactuar con ellos.',
+            
+            contact: {
+                name: 'Romario Ariza',
+                email: 'romarioariza@gmail.com'
+            }
         }
     },
     apis: ['./routes/users.routes.js','./models/user.model.js','./routes/restaurants.routes.js','./models/restaurant.model.js','./routes/meals.routes.js','./models/meal.model.js','./routes/orders.routes.js','./models/order.model.js']
-};
+}
 
 const swaggerSpec = swaggerJSDoc(options)
 

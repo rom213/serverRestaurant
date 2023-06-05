@@ -28,14 +28,19 @@ const router = express.Router();
  *          password:
  *              type: string
  *              description: The user password
+ *          role:
+ *              type: string
+ *              description: user / admin
  *        required:
  *         - name
  *         - email
  *         - password
+ *         - role
  *        example:
  *           name: John Doe
  *           email: john@correo.com
  *           password: "123456789"
+ *           role: user / admin
  */
 
 /** 
