@@ -1,4 +1,4 @@
-# API Blog
+# API Restaurant
 
 Esta es una aplicación backend desarrollada en Node.js con Express y Sequelize.
 
